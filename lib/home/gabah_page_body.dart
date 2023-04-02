@@ -1,10 +1,12 @@
 import 'package:belajar/widgets/big_text.dart';
 import 'package:belajar/widgets/small_text.dart';
+import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:belajar/widgets/icon_and_text_widget.dart';
 import 'package:belajar/utilities/app_colors.dart';
+import 'package:belajar/utilities/dimensi.dart';
 
 class GabahPageBody extends StatefulWidget {
   const GabahPageBody({super.key});
@@ -17,7 +19,7 @@ class _GabahPageBodyState extends State<GabahPageBody> {
   PageController pageController = PageController(viewportFraction: 0.85);
   var _currPageValue=0.0;
   double _scaleFactor =0.8;
-  double _height = 220;
+  double _height = Dimensions.pageViewContainer;
   
   @override
   void initState(){
@@ -37,16 +39,31 @@ class _GabahPageBodyState extends State<GabahPageBody> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return Column(
+      children: [
+        Container(
       // color: Colors.redAccent,
-      height: 320,
-      child: PageView.builder(
-        controller: pageController,
-          itemCount: 6,
-          itemBuilder: (context, position){
-        return _buildPageItem(position);
-      }),
+          height: Dimensions.pageView,
+          child: PageView.builder(
+            controller: pageController,
+              itemCount: 6,
+              itemBuilder: (context, position){
+            return _buildPageItem(position);
+          }),
+        ),
+        new DotsIndicator(
+            dotsCount: 5,
+            position: _currPageValue,
+            decorator: DotsDecorator(
+              activeColor: AppColors.deepPurple,
+              size: const Size.square(9.0),
+              activeSize: const Size(18.0, 9.0),
+              activeShape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
+          ),
+        )
+      ],
     );
+
   }
   Widget _buildPageItem(int index) {
     Matrix4 matrix = new Matrix4.identity();
@@ -77,10 +94,10 @@ class _GabahPageBodyState extends State<GabahPageBody> {
       child: Stack(
         children: [
           Container(
-            height: 220,
-            margin: EdgeInsets.only(left: 10, right: 10),
+            height:  Dimensions.pageViewContainer,
+            margin: EdgeInsets.only(left: Dimensions.width10, right: Dimensions.width10),
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(30),
+              borderRadius: BorderRadius.circular(Dimensions.radius30),
               color: index.isEven?Color(0xFFFF6961):Color(0xFF9295cc),
               image: DecorationImage(
                 fit: BoxFit.cover,
@@ -93,10 +110,10 @@ class _GabahPageBodyState extends State<GabahPageBody> {
           Align(
             alignment: Alignment.bottomCenter,
             child: Container(
-              height: 120,
-              margin: EdgeInsets.only(left: 40, right: 40, bottom: 25),
+              height: Dimensions.pageViewTextContainer,
+              margin: EdgeInsets.only(left: Dimensions.width30, right: Dimensions.width30, bottom: Dimensions.height30),
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20),
+                borderRadius: BorderRadius.circular(Dimensions.radius20),
                 color: Colors.white,
                 boxShadow: [
                   BoxShadow(
@@ -115,12 +132,12 @@ class _GabahPageBodyState extends State<GabahPageBody> {
                 ]
               ),
               child: Container(
-                padding: EdgeInsets.only(top:10, left: 15, right: 15),
+                padding: EdgeInsets.only(top:Dimensions.height15, left: 15, right: 15),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     BigText(text: "Lahan Kami", color: Colors.black,),
-                    SizedBox(height: 10,),
+                    SizedBox(height: Dimensions.height10,),
                     Column(
                       children: [
                         SmallText(
@@ -128,9 +145,10 @@ class _GabahPageBodyState extends State<GabahPageBody> {
                           color: Colors.black
                         )
                       ],
-                    )
-                    ,SizedBox(height: 20,),
+                    ),
+                    SizedBox(height: Dimensions.height20,),
                     Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         IconAndaTextWidget(icon: Icons.circle_sharp,
                             text: "Normal",

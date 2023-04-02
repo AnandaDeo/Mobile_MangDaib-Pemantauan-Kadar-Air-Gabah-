@@ -2,7 +2,7 @@ import 'package:belajar/widgets/small_text.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:flutter/cupertino.dart';
-
+import 'package:belajar/utilities/dimensi.dart';
 class IconAndaTextWidget extends StatelessWidget {
   final IconData icon;
   final String text;
@@ -17,10 +17,9 @@ class IconAndaTextWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Icon(icon, color: iconColor,),
+        Icon(icon, color: iconColor, size:Dimensions.iconSize24),
         SizedBox(width: 5,),
         SmallText(text: text),
-
       ],
     );
   }
