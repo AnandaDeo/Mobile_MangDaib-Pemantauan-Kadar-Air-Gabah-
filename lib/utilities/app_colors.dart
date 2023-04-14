@@ -46,3 +46,4 @@ class AppColors {
   // Add your own custom colors below this line
 
 }
+

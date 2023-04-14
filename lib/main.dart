@@ -1,6 +1,13 @@
+// import 'package:belajar/pages/alat/rekomendasi_alat.dart';
+import 'package:belajar/pages/alat/rekomendasi_alat.dart';
+import 'package:belajar/pages/home/login.dart';
+import 'package:belajar/pages/home/main_monitoring.dart';
+import 'package:belajar/pages/home/menu.dart';
+import 'package:belajar/pages/home/splash_page.dart';
 import 'package:flutter/material.dart';
-import 'package:belajar/home/main_monitoring_page.dart';
+import 'package:belajar/pages/home/main_monitoring_page.dart';
 import 'package:get/get.dart';
+import 'package:belajar/pages/alat/alat_alat.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -18,7 +25,7 @@ class MyApp extends StatelessWidget {
 
         primarySwatch: Colors.blue,
       ),
-      home: MainMonitoringPage(),
+      home:HomePage ()
     );
   }
 }
