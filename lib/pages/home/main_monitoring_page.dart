@@ -1,11 +1,7 @@
 import 'package:belajar/pages/home/login.dart';
 import 'package:belajar/utilities/text_style.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import 'package:belajar/utilities/app_colors.dart';
-import 'package:belajar/utilities/color.dart';
 import 'package:belajar/widgets/big_text.dart';
-import 'package:belajar/widgets/small_text.dart';
 import 'package:belajar/pages/home/gabah_page_body.dart';
 import 'package:belajar/utilities/dimensi.dart';
 class MainMonitoringPage extends StatefulWidget {
@@ -32,12 +28,6 @@ class _MyWidgetState extends State<MainMonitoringPage> {
                   Column(
                     children: [
                         BigText(text: "MangDaib", color:Color.fromARGB(255, 38, 172, 29)),
-                        // Row(
-                        //   children: [
-                        //     Icon(Icons.person_2_rounded),
-                        //     SmallText(text: "Fullan", color:Colors.black87)
-                            
-                        // ],)
 
                       ],
                     ), 
@@ -65,24 +55,8 @@ class _MyWidgetState extends State<MainMonitoringPage> {
                         ],
                         ),
                         ),
-                        
-                  // Center(
-                  //   child: Container(
-                  //       width:Dimensions.height45,
-                  //       height: Dimensions.height45,
-                        
-                  //       child: BigText(text: 'Login', color:Colors.white, size:Dimensions.iconSize24),
 
-                  //       decoration:BoxDecoration(
-                          
-                  //           borderRadius: BorderRadius.circular(Dimensions.radius15),
-                  //           color: AppColors.pastelPink,
-                  //       ),
-                  //     ),
-                  // )
-                  
-              )],
-        
+              )],       
                 ),
               ),
             ),

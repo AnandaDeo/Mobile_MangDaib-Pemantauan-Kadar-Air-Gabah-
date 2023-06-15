@@ -1,7 +1,4 @@
 import 'package:belajar/pages/data_table.dart';
-import 'package:belajar/utilities/dimensi.dart';
-import 'package:belajar/widgets/big_text.dart';
-import 'package:belajar/widgets/small_text.dart';
 import 'package:flutter/material.dart';
 import 'package:belajar/utilities/app_colors.dart';
 
@@ -238,12 +235,6 @@ List dataList = [
         // "icon": Icons.paypal,
         "title": "Pemantauan Gabah",
       },
-      {
-        "level":1,
-        // "icon": Icons.credit_card,
-        "title": "Klasifikasi Gabah",
-      },
-
       { "level":1,
         // "icon": Icons.credit_card,
         "title": "Data Gabah"
@@ -366,25 +357,7 @@ class OutlinedCardExample extends StatelessWidget {
           height: 100,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text(
-                'Jumlah Gabah',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-              const SizedBox(height: 8),
-              Text(
-                '26',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 14,
-                  fontWeight: FontWeight.w500,
-                ),
-              ),
-            ],
+
           ),
         ),
       ),

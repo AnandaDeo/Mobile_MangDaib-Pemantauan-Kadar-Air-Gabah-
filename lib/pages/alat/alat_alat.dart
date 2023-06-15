@@ -5,7 +5,6 @@ import 'package:belajar/utilities/dimensi.dart';
 import 'package:belajar/widgets/app_icon.dart';
 import 'package:belajar/widgets/big_text.dart';
 import 'package:belajar/utilities/app_colors.dart';
-
 import '../../widgets/app_collumn.dart';
 
 class AlatAlat extends StatelessWidget {

@@ -1,2 +1,2 @@
 Descriptio
-Aplikasi MangDaib digunakan untuk membantu para petani dalam mengatasi kondisi gabah saat dikeringkan dikarenakan para petani yang masih belum mengetahui berapa kisaran waktu untuk mengeringkan sebuah gabah di dalam mesin. Maka dari itu MangDaib yang menggunakan MachineLearning Hadir untuk mengatasi masalah tersebut
+Aplikasi MangDaib digunakan untuk membantu para petani dalam mengatasi kondisi gabah saat dikeringkan dikarenakan para petani yang masih belum mengetahui berapa kisaran waktu untuk mengeringkan sebuah gabah di dalam mesin. Maka dari itu MangDaib yang menggunakan MachineLearning Hadir untuk mengatasi masalah tersebut   

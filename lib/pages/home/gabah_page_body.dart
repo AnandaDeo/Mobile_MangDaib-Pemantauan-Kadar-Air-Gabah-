@@ -4,9 +4,6 @@ import 'package:belajar/widgets/big_text.dart';
 import 'package:belajar/widgets/small_text.dart';
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
-import 'package:belajar/widgets/icon_and_text_widget.dart';
 import 'package:belajar/utilities/app_colors.dart';
 import 'package:belajar/utilities/dimensi.dart';
 

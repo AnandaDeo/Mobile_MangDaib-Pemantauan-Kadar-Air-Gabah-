@@ -7,6 +7,10 @@ import 'package:belajar/widgets/text.dart';
 import 'package:flutter/material.dart';
 
 class EditablePage extends StatefulWidget {
+
+  String url = ''; 
+
+
   @override
   _EditablePageState createState() => _EditablePageState();
 }

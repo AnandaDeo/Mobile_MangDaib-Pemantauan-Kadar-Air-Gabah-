@@ -4,6 +4,8 @@ import 'package:belajar/pages/home/login.dart';
 import 'package:belajar/pages/home/main_monitoring.dart';
 import 'package:belajar/pages/home/menu.dart';
 import 'package:belajar/pages/home/splash_page.dart';
+import 'package:belajar/pages/prediksi/dataGabah.dart';
+import 'package:belajar/pages/prediksi/form_input.dart';
 import 'package:flutter/material.dart';
 import 'package:belajar/pages/home/main_monitoring_page.dart';
 import 'package:get/get.dart';
@@ -25,7 +27,7 @@ class MyApp extends StatelessWidget {
 
         primarySwatch: Colors.blue,
       ),
-      home:HomePage ()
+      home:HomePage()
     );
   }
 }

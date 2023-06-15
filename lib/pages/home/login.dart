@@ -1,12 +1,12 @@
 import 'package:belajar/pages/home/main_monitoring.dart';
 import 'package:belajar/pages/home/main_monitoring_page.dart';
+import 'package:belajar/pages/prediksi/form_input.dart';
 import 'package:belajar/utilities/color.dart';
 import 'package:belajar/utilities/space.dart';
 import 'package:belajar/utilities/text_style.dart';
 import 'package:belajar/widgets/main_button.dart';
 import 'package:belajar/widgets/text_field.dart';
 import 'package:flutter/material.dart';
-
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -73,7 +73,7 @@ class _LoginPageState extends State<LoginPage> {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (builder) => MainMonitoring(title: "Pemantauan Tingkat Kekeringan Gabah")));
+                                builder: (builder) => PredictionForm()));
                       },
                       text: 'Sign in',
                       btnColor: blueButton,
